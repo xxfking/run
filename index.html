@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的导航站</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0070f3;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .category {
+      margin-bottom: 30px;
+    }
+    .category h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+      border-left: 5px solid #0070f3;
+      padding-left: 10px;
+    }
+    .nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .nav-item {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1 1 calc(33% - 20px);
+      box-sizing: border-box;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .nav-item:hover {
+      transform: translateY(-3px);
+    }
+    .nav-item a {
+      text-decoration: none;
+      color: #0070f3;
+      font-weight: bold;
+      display: block;
+    }
+    @media(max-width: 600px) {
+      .nav-item {
+        flex: 1 1 100%;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>我的导航站</h1>
+  <p>快捷访问常用网站，简单易用</p>
+</header>
+
+<div class="container">
+
+  <!-- 搜索工具 -->
+  <div class="category">
+    <h2>搜索工具</h2>
+    <div class="nav-list">
+      <div class="nav-item"><a href="https://www.google.com" target="_blank">Google</a></div>
+      <div class="nav-item"><a href="https://www.bing.com" target="_blank">Bing</a></div>
+      <div class="nav-item"><a href="https://www.baidu.com" target="_blank">百度</a></div>
+      <div class="nav-item"><a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a></div>
+    </div>
+  </div>
+
+  <!-- 开发工具 -->
+  <div class="category">
+    <h2>开发工具</h2>
+    <div class="nav-list">
+      <div class="nav-item"><a href="https://github.com" target="_blank">GitHub</a></div>
+      <div class="nav-item"><a href="https://gitlab.com" target="_blank">GitLab</a></div>
+      <div class="nav-item"><a href="https://codepen.io" target="_blank">CodePen</a></div>
+      <div class="nav-item"><a href="https://jsfiddle.net" target="_blank">JSFiddle</a></div>
+    </div>
+  </div>
+
+  <!-- AI 工具 -->
+  <div class="category">
+    <h2>AI 工具</h2>
+    <div class="nav-list">
+      <div class="nav-item"><a href="https://chat.openai.com" target="_blank">ChatGPT</a></div>
+      <div class="nav-item"><a href="https://stablediffusionweb.com" target="_blank">Stable Diffusion</a></div>
+      <div class="nav-item"><a href="https://copilot.github.com" target="_blank">GitHub Copilot</a></div>
+      <div class="nav-item"><a href="https://perplexity.ai" target="_blank">Perplexity AI</a></div>
+    </div>
+  </div>
+
+  <!-- 学习资料 -->
+  <div class="category">
+    <h2>学习资料</h2>
+    <div class="nav-list">
+      <div class="nav-item"><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a></div>
+      <div class="nav-item"><a href="https://www.coursera.org" target="_blank">Coursera</a></div>
+      <div class="nav-item"><a href="https://www.edx.org" target="_blank">edX</a></div>
+      <div class="nav-item"><a href="https://www.bilibili.com" target="_blank">Bilibili 学习区</a></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 我的导航站
+</footer>
+
+</body>
+</html>
